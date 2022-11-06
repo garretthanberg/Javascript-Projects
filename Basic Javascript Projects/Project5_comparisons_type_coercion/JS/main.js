@@ -1,4 +1,4 @@
-function nanf() { //THIS FUNCTION WILL DISPLAY "NaN"" BECAUSE 0/0 IS NOT A NUMBER
+function nanf() { //THIS FUNCTION WILL DISPLAY "NaN" BECAUSE 0/0 IS NOT A NUMBER
     document.getElementById("Test").innerHTML = 0/0;
 }
 
