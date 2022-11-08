@@ -20,7 +20,7 @@ function uppercase() { //WITH THIS EXAMPLE I USED THE TOUPPERCASE() METHOD TO MA
     document.getElementById("World").innerHTML = section;    
 }
 
-function search() { //WITH THIS EXAMPLE I USED THE SEARCH() METHOD TO RETURN THE INDEX (POSITION) OF THE FIRST MATCH
+function search() { //WITH THIS EXAMPLE I USED THE SEARCH() METHOD TO RETURN THE INDEX (POSITION) OF THE FIRST MATCH.
     var sentence = "Mr. Morale & The Big Steppers."
     var section = sentence.search("Steppers");
     document.getElementById("Search").innerHTML = section;
