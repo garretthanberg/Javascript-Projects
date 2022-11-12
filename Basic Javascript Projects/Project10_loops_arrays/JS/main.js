@@ -29,7 +29,7 @@ function array() {
         Name[2] + ".";
 }
 
-function constant() { //THIS IS AN EXAMPLE OF USING A CONSTANT (A VARIABLE THAT CANNON CHANGE).
+function constant() { //THIS IS AN EXAMPLE OF USING A CONSTANT (A VARIABLE THAT CANNOT CHANGE).
     const Camera = {type: "EOS 60D DSLR", brand: "Canon", color:"black"};
     Camera.color = "blue";
     Camera.price = "$1599.00";
