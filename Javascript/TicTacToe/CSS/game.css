@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+/*THIS CONTAINER INCLUDES OUR TABLE AND OUR CANVAS.*/
+.center-container {
+    /*THIS PROPERTY SETS THE WIDTH OF OUR CONTAINER.*/
+    width: 608px;
+    /*THIS PROPERTY CENTERS OUR CONTAINER.*/
+    margin: 0 auto;
+    /*50PX DOWN FROM THE TOP.*/
+    margin-top: 50px;
+}
+
+table {
+    /*THIS PROPERTY COLLAPSES TABLE BORDER INTO 1 BORDER.*/
+    border-collapse: collapse;
+    /*THIS HIDES OUTER BORDERS ON TABLE.*/
+    border-style: hidden;
+}
+
+td {
+    /*THIS PROPERTY CHANGES THE CURSOR TO THE INDEX FINGER HAND WHEN WE HOVER OVER TD ELEMENTS.*/
+    cursor: pointer;
+    /*THIS PROPERTY SETS OUR TABLE BORDER STYLE.*/
+    border: 4px solid rgba(3, 119, 252, 0.8);
+    /*THIS PROPERTY REMOVES DAFAULT PADDING.*/
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas {
+    /*THIS PROPERTY SETS THE POSITION OF OUR CANVAS TO THE TOP LEFT CORNER OF OUR CONTAINER.*/
+    position: absolute;
+    /*THIS PROPERTY PLACES OUR CANVAS OVER THE TOP OF OUR TABLE.*/
+    z-index: 10;
+    /*THIS PROPERTY MAKES OUR CANVAS INVISIBLE.*/
+    pointer-events: none;
+}

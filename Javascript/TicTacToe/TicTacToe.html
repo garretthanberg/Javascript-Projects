@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./CSS/game.css">
+        <script src="./JS/tictactoe.js" defer></script>
+        <title>Play Tic-Tac-Toe Online!</title>
+    </head>
+    <body id="body">
+        <h1>TIC TAC TOE GAME!</h1>
+        <!--THIS CONTAINER IS NEEDED TO OVERLAY OUR CANVAS OVER OUR TABLE.-->
+        <div class="center-container">
+            <!--NOTE: CANVAS WIDTH AND HEIGHT MUST BE WITHIN THE ELEMENT.-->
+            <canvas id="win-lines" width="608" length="608"></canvas>
+            <table>
+                <tr>
+                    <td id="0" onclick="placeXOrO('0')"></td>
+                    <td id="1" onclick="placeXOrO('1')"></td>
+                    <td id="2" onclick="placeXOrO('2')"></td>
+                </tr>
+                <tr>
+                    <td id="3" onclick="placeXOrO('3')"></td>
+                    <td id="4" onclick="placeXOrO('4')"></td>
+                    <td id="5" onclick="placeXOrO('5')"></td>
+                </tr>
+                <tr>
+                    <td id="6" onclick="placeXOrO('6')"></td>
+                    <td id="7" onclick="placeXOrO('7')"></td>
+                    <td id="8" onclick="placeXOrO('8')"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
