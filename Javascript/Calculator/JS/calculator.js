@@ -41,7 +41,7 @@ function Input_Decimal(dot) {
 function Handle_Operator(Next_Operator) {
     const {First_Operand, Display_Value, operator} = Calculator;
     //WHEN AN OPERATOR KEY IS PRESSED WE CONVERT THE CURRENT NUMBER
-    //DISPLAYED ON THE SCREENTO A NUMBER AND THEN STORE THE RESULT IN
+    //DISPLAYED ON THE SCREEN TO A NUMBER AND THEN STORE THE RESULT IN
     //CALCULATOR.FIRST_OPERAND IF IT DOESN'T ALREADY EXIST.
     const Value_of_Input = parseFloat(Display_Value);
     //CHECKS IF AN OPERATOR ALREADY EXISTS AND IF WAIT_SECOND_OPERAND IS TRUE,
@@ -96,7 +96,7 @@ keys.addEventListener('click', (event) => {
     //THE TARGET VARIABLE IS AN OBJECT THAT REPRESENTS THE ELEMENT
     //THAT WAS CLICKED.
     const { target } = event;
-    //IF THE ELEMENT THAT WAS CLICKED FON IS NOT A BUTTON, EXIT THE FUNCTION.
+    //IF THE ELEMENT THAT WAS CLICKED ON IS NOT A BUTTON, EXIT THE FUNCTION.
     if (!target.matches('button')) {
         return;
     }

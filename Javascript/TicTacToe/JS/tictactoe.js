@@ -5,7 +5,7 @@ let selectedSquares = [];
 
 //THIS FUNCTION IS FOR PLACING AN X OR O IN THE SQUARE.
 function placeXOrO(squareNumber) {
-    //THIS CONDITION ENSURES A SQUARTE HASN'T BEEN SELECTED ALREADY.
+    //THIS CONDITION ENSURES A SQUARE HASN'T BEEN SELECTED ALREADY.
     //THE .SOME() METHOD IS USED TO CHECK EACH ELEMENT OF THE SELECTSQUARE ARRAY
     //TO SEE IF IT CONTAINS THE SQUARE NUMBER CLICKED ON.
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
@@ -102,7 +102,7 @@ function checkWinConditions() {
     // O 0, 4, 8 CONDITION.
     else if (arrayIncludes('0O', '4O', '8O')) { drawWinLine(100, 100, 520, 520) }
     //THIS CONDITION CHECKS FOR A TIE. IF NONE OF THE ABOVE CONDITIONS ARE MET AND
-    //99 SQUARES ARE SELECTED THE CODE EXECUTES.
+    //9 SQUARES ARE SELECTED THE CODE EXECUTES.
     else if (selectedSquares.length >= 9) {
         //THIS FUNCTION PLAYS THE TIE GAME SOUND.
         audio("./Media/tie2.mp3");
