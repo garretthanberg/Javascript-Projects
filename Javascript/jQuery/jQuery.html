@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <title>jQuery</title>
+    </head>
+    <script> //THIS FUNCTION APPENDS THE FOLLOWING BODY TAG AND ALL ITS CONTENT TO THE HTML TAG
+            $(document).ready(function() { //AS THE DOCUMENT IS LOADED.
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("#2").css({"color":"red"}); //THIS USES CSS TO CHANGE PARAGRAPH 2 TO THE COLOR RED.
+                $("#1").click(function() { //WHEN PARAGRAPH 1 IS CLICKED, A MESSAGE WILL POP UP IN THE DEVELOPER TOOLK CONSOLE.
+                    console.log("You clicked a paragraph!");
+                });
+                $("#3").click(function() {
+                    $("h1").fadeOut( 2000 ); //THIS FUNCTION FADES THE H1 TAG WHEN PARAGRAPH 3 IS CLICKED ON.
+                });
+
+            });
+        </script>
+</html>
