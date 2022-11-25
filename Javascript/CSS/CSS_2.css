@@ -101,3 +101,9 @@ img {
     width: 200px;
     animation: zoominoutpicture 15s forwards;
 }
+
+div.sticky {
+    position: -webkit-sticky; /* FOR SAFARI */
+    position: sticky;
+    top: 0;
+}
