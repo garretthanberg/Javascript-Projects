@@ -28,3 +28,13 @@ form {
     background-color: #f2f2f2;
     padding: 20px;    
 }
+
+body {
+    opacity: 1;
+    transition: 3s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}

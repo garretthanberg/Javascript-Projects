@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XML Practice</title>
+    </head>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //THIS CREATES A TEXT STRING
+            var TV_Show = "<tvshow>" +
+                "<title>Breaking Bad</title>" +
+                "<director>Vince Gilligan</director>" +
+                "<actor1>Bryan Cranston</actor1>" +
+                "<actor2>Aaron Paul</actor2>" +
+                "<maincharacter1>Walter White</maincharacter1>" +
+                "<maincharacter2>Jesse Pinkman</maincharacter2>" +
+                "</tvshow>";
+
+                //THIS CREATES AN XML DOM PARSER
+                XML_Parser = new DOMParser();
+
+                //THIS CREATES A NEW XML DOM OBJECT USING THE TEXT STRING
+                XML_Document = XML_Parser.parseFromString(TV_Show,"text/xml");
+
+                document.getElementById("XML_Example").innerHTML =
+                    XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

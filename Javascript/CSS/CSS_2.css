@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+/* BUTTON USED TO OPEN THE CONTACT FORM - FIXED AT THE BOTTOM OF THE PAGE */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* THE POPUP FORM - HIDDEN BY DEFAULT */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;    
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* ADD STYLES TO THE FORM CONTAINER */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* FULL WIDTH INPUT FIELDS */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* WHEN THE INPUTS GET FOCUS, DO SOMETHING */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* SETS A STYLE FOR THE SUBMIT/LOGIN BUTTON */
+.form-container .btn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* THIS ADDS A RED BACKGROUND COLOR TO THE CANCEL BUTTON */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* THIS ADDS SOME HOVER EFFECTS TO BUTTONS */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.movingBox {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: myMove 5s infinite;
+}
+
+@keyframes myMove {
+    0% {top: 0px; left: 0px; background: red;}
+    25% {top: 0px; left: 100px; background: blue;}
+    50% {top: 100px; left: 100px; background: yellow;}
+    75% {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+@keyframes zoominoutpicture {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.2,1.2);}
+    100% {transform: scale(1,1);}
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 500px;
+    height: 200px;
+    width: 200px;
+    animation: zoominoutpicture 15s forwards;
+}
